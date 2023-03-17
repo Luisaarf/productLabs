@@ -1,0 +1,26 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us"
+  },
+  "store.custom#structured-data": {
+    "path": "/structureddata"
+  },
+  "store.custom#custom-blog": {
+    "path": "/custom-blog/"
+  },
+  "store.custom#custom-blog-post": {
+    "path": "/custom-blog/:path"
+  },
+  "store.custom#buy-list": {
+    "path": "/buy-list"
+  },
+  "store.custom#buylist-list-products-page": {
+    "path": "/buy-list-product/:path"
+  }
+}

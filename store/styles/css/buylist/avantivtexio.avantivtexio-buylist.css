@@ -1,0 +1,499 @@
+.buttonCreateList {
+  display: flex;
+  background-color: #f36a10;
+  border: 1px solid white;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.buttonMyList{
+  display: flex;
+  background-color: #040404;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ContainerList {
+  max-width: 100%;
+  width: 90%;
+}
+
+.buttonMyListText {
+  margin-left: 10px;
+}
+
+.buttonAddList {
+  display: flex;
+  border: none;
+  background: none;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.buttonAddListText {
+  display: block;
+  margin-right: 10px;
+}
+
+.containerQuickView {
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.containerContentAddProductList {
+
+}
+
+.titleAddProductList {
+  color: #f36a10;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+}
+
+.containerCreateNewListonQuickView {
+  display: flex;
+}
+
+.inputCreateListQuick {
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  margin: 10px 5px 10px auto;
+}
+
+.buttonOkCreateListQuick {
+  display: block;
+  padding: 10px;
+  background-color: #1a1818;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px auto 10px 5px;
+  cursor: pointer;
+}
+
+.containerHeaderItensQuickView {
+  max-width: 100%;
+  width: 100%;
+}
+
+.linkGoTOMyList {
+
+}
+
+.containerShowProductQuickView {
+  background-color: #efefef;
+}
+
+.imageShowProduct {
+  width: 15%;
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.textShowProductName {
+  text-align: center;
+  padding: 20px;
+}
+
+.containerProductQuantity {
+
+}
+
+.titleAddProductListCheckBoxes {
+  color: #f36a10;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.containerListOfListIntoAddProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.checkBoxIntoListOfBuyLists {
+  margin-right: 10px;
+}
+
+.iconListHeaderQuickView {
+  display: block;
+  margin-right: 20px;
+}
+
+.containerHeaderProductListQuickView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuantitySelector {
+  display: flex;
+  margin-right: auto;
+  border-radius: 3px;
+  max-width: 100%;
+  /* height: 43px; */
+  width: 25%;
+}
+
+.QuantityMinus {
+  display: block;
+  max-width: 100%;
+  border: 0.5px solid #e3e4e6;
+  background: none;
+  width: 20%;
+  cursor: pointer;
+}
+
+.QuantityDisplay {
+  display: block;
+  text-align: center;
+  border: 0.5px solid #e3e4e6;
+  max-width: 100%;
+  padding: 2px;
+  width: 30%;
+}
+
+.QuantityPlus {
+  display: block;
+  max-width: 100%;
+  border: 0.5px solid #e3e4e6;
+  background: none;
+  width: 20%;
+  cursor: pointer;
+}
+
+.containerButton {
+  display: flex;
+  max-width: 100%;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.containerButtonSaveProductList {
+  display: block;
+}
+
+.ButtonSaveProductList {
+  display: block;
+  border: none;
+  padding: 25px;
+  width: 340px;
+  border-radius: 100px;
+  background-color: #f36a10;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 80px auto 10px auto;
+  cursor: pointer;
+}
+
+.ButtonSaveProductList:disabled {
+  background-color: #f8c6a5;
+  color: rgb(150, 150, 150);
+  cursor: auto;
+}
+
+.containerTextListOfBuyList {
+  display: block;
+  margin: 0px auto 0px 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.listNameIntoLisArray {
+  display: block;
+  font-weight: 700;
+}
+
+.productsQuantity {
+  display: block;
+}
+
+
+.containerListOfProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.containerProductInfo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto 0 30px;
+}
+
+.listNameIntoLisArray {
+  color: #8d8d8d
+}
+
+.productImageIntoList {
+  max-width: 100%;
+  width: 10%;
+}
+
+.containerQuantityValues{
+  display: flex;
+  max-width: 100%;
+  width: 40%;
+}
+
+.productPriceIntoList {
+  display: block;
+  max-width: 100%;
+  width: 20%;
+}
+
+.QuantitySelectorIntoProductList {
+  display: flex;
+  margin-right: auto;
+  margin-left: 30px;
+  border-radius: 3px;
+  max-width: 100%;
+  /* height: 43px; */
+  align-items: center;
+  width: 30%;
+}
+
+.QuantityMinusIntoProductList {
+  display: block;
+  max-width: 100%;
+  border: 0.5px solid #e3e4e6;
+  background: none;
+  width: 20%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.QuantityDisplayIntoProductList {
+  display: block;
+  text-align: center;
+  border: 0.5px solid #e3e4e6;
+  max-width: 100%;
+  padding: 2px;
+  width: 30%;
+  padding: 5px;
+}
+
+.QuantityPlusIntoProductList {
+  display: block;
+  max-width: 100%;
+  border: 0.5px solid #e3e4e6;
+  background: none;
+  width: 20%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.totalBlockIntoProductList{
+  display: block;
+  margin-right: 30px;
+  color: #f36a10;
+  font-weight: 700;
+}
+
+.removeButtonIntoProductList {
+  display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.blockTotalPriceTable{
+  display: flex;
+  max-width: 100%;
+  width: 15%;
+  background-color: #f0f0f0;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 40px 10px auto;
+}
+
+.totalText {
+  display: block;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  font-weight: 700;
+}
+
+.totalValueText {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.containerActionButtons {
+  display: flex;
+  max-width: 100%;
+  width: 40%;
+  margin: 10px 40px 10px auto;
+}
+
+.buttonSaveUpdates {
+  display: block;
+  background-color: white;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  color: #f36a10;
+  border: 1px solid #f36a10;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 20px 0px auto;
+}
+
+.buttonSaveUpdates:disabled {
+  border: 1px solid #f8c6a5;
+  color: #f8c6a5;
+  cursor: auto;
+}
+
+.buttonAddToCart {
+  display: block;
+  background-color: #f36a10;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.buttonAddToCart:disabled {
+  background-color: #f8c6a5;
+  color: rgb(150, 150, 150);
+  cursor: auto;
+}
+
+.containerSelectAllProducts{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.allItensSelection {
+  margin-right: 20px;
+}
+
+.productListTitle {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.containerHeadProductListTexts {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+}
+
+.containerHeadeItens {
+  display: flex;
+}
+
+.buttonIconEditIntoHead {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.inputEditBuyListName {
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  /* margin: 10px 5px 10px auto; */
+}
+
+.saveButtonEditListName {
+  display: block;
+  background-color: #f36a10;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.cancelButtonEditListName {
+  display: block;
+  background-color: #262626;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+
+
+.saveButtonEditListName:disabled {
+  background-color: #f8c6a5;
+  color: rgb(150, 150, 150);
+}
+
+
+@media screen and (max-width: 800px) {
+  .titleAddProductList {
+    font-size: 20px;
+  }
+
+  .imageShowProduct {
+    width: 45%;
+  }
+
+  .titleAddProductListCheckBoxes {
+    font-size: 15px;
+  }
+
+  .containerListOfListIntoAddProduct {
+    width: 100%;
+  }
+
+  .QuantitySelector {
+    width: 70%;
+  }
+
+  .containerActionButtons {
+    width: 85%;
+  }
+
+  .blockTotalPriceTable {
+    width: 55%;
+  }
+
+}

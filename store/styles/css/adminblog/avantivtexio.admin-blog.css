@@ -1,0 +1,274 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.containerWrapperImageMenu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.blogImageBlock {
+  display: flex;
+  justify-content: center;
+  grid-area: 1 / 1 / 13 / 13;
+}
+
+.blogImage {
+}
+
+
+.spiner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  stroke: #000000;
+}
+
+.circleLoading {
+  stroke: hsl(210, 70, 75);
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+.containerEmptyMessage{
+  text-align: center;
+  padding: 60px;
+}
+
+.blogMenu {
+  grid-area: 12 / 5 / 14 / 9;
+  background-color: #303030;
+  color: #fff;
+  margin: 0 25px;
+}
+
+.blogMenuList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-gap: 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.buttonBlogMenuListOption {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.blogMenuListOption {
+  cursor: pointer;
+}
+
+.blogPosts {
+  max-width: calc(420px * 3);
+  width: 100%;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.wrapContainerPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 20px;
+}
+
+.post {
+  margin: 0 auto 40px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.postImage {
+  max-height: 230px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.postDate {
+  color: #9F9D9E;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.postDateIcon {
+  margin-right: 12px;
+}
+.postDateIconImage {
+  width: 18px;
+  height: 18px;
+}
+.postInfos {}
+
+.postTitle {
+  color: #333333;
+  font-size: 18px;
+}
+.postBar {
+  opacity: 0.6;
+}
+.postText {
+  color: #9F9D9E;
+  font-size: 14px;
+  overflow:hidden;
+  height: 44px;
+  margin: 0px;
+  padding: 10px 6px 10px 0;
+}
+.postButton {
+  margin: 20px 0 0;
+  background-color: transparent;
+  padding: 12px 26px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.buttonLoadMore {
+  background: #000;
+  border: none;
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .blogImageBlock {
+    grid-area: 1 / 1 / 13 / 13;
+  }
+
+  .blogMenu {
+    grid-area: 11 / 2 / 15 / 12;
+  }
+}
+
+
+/* =============== post page ============== */
+.wrapPostInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainBoxPostInfo {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;
+  padding: 0;
+  margin: 50px auto;
+}
+.headerPostInfo {
+  margin: 0 0 50px;
+}
+.headerPostInfo .titlePostInfo {
+  width: 100%;
+  font-weight: normal;
+  margin: 0 0 5px;
+  border-bottom: 1px solid #ccc
+}
+.mainBoxPostInfo .dateCreatedPostInfo {
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/* =============== side bar ============== */
+.backButtonPost {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+  float: right;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.headerSideBarPost {
+  width: 100%;
+  height: 40px;
+  background: #000;
+  margin: 0 0 35px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.titleHeaderSideBarPost {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sidePost {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.sidePostImage {
+  object-fit: cover;
+  width: 100px;
+  height: 75px;
+  flex: 1;
+}
+.sidePostText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  flex: 2;
+}
+
+.sideButtonLoadMore {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+{
+  "store.custom#custom-blog-post": {
+    "blocks": ["flex-layout.row#custom-blog-post"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#custom-blog-post": {
+    "children": ["blog-posts-dynamic"]
+  }
+}

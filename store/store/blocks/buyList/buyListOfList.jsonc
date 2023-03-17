@@ -1,0 +1,7 @@
+{
+  "store.custom#buy-list": {
+    "children": [
+      "buy-list"
+    ]
+  }
+}

@@ -62,9 +62,6 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x"
   },
-  "peerDependencies": {
-    "avantivtexio.avantivtexio-buylist": "0.x",
-    "vtex.reviews-and-ratings": "2.x"
-  },
+  "peerDependencies": {},
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

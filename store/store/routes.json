@@ -7,11 +7,5 @@
   },
   "store.custom#contact-us": {
     "path": "/contact-us"
-  },
-  "store.custom#buy-list": {
-    "path": "/buy-list"
-  },
-  "store.custom#buylist-list-products-page": {
-    "path": "/buy-list-product/:path"
   }
 }

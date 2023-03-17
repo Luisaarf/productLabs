@@ -1,9 +1,6 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "get-navigation-info",
-      "get-organization-info",
-      "set-structedData-info",
       "menu-item#shop",
       "menu-item#about-us"
     ]

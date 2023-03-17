@@ -8,9 +8,6 @@
       "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
-      "get-breadcrumb-info",
-      "get-product-info",
-      "get-website-info",
       "product-questions-and-answers"
     ]
   },

@@ -64,8 +64,6 @@
   },
   "peerDependencies": {
     "avantivtexio.avantivtexio-buylist": "0.x",
-    "avantivtexio.avantivtexio-structured-data": "0.x",
-    "avantivtexio.admin-blog": "1.x",
     "vtex.reviews-and-ratings": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

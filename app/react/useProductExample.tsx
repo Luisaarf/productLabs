@@ -16,11 +16,11 @@ const useProductExample = () => {
     console.log("🚀 ~ file: useProductExample.tsx:26 ~ useProductExample ~ product?.product?.items[0]?.name:", product?.product?.items[0]?.name)
     
     return <>
-    {
+    {/* {
                 !product?
                  null :
                 <span>{product?.product?.items[0]?.name}</span>
-    }
+    } */}
         </>
 }
 

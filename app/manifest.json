@@ -1,6 +1,6 @@
 {
   "vendor": "avantivtexio",
-  "name": "productLabsApp",
+  "name": "product-labsapp",
   "version": "0.0.1",
   "title": "productLabs",
   "description": "testing product contexts",
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "vtex.styleguide": "9.x",
-    "vtex.product-summary-context": "0.x"
+    "vtex.product-summary-context": "0.x",
+    "vtex.product-context": "0.x"
   },
   "billingOptions": {
     "type": "free",

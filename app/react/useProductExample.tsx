@@ -1,35 +1,56 @@
 import React from "react";
 import { useProduct } from 'vtex.product-context'
-// import { ProductSummaryTypes, ProductSummaryContext } from 'vtex.product-summary-context'
-import { useProductSummary } from 'vtex.product-summary-context/ProductSummaryContext'
+import { useProductSummary, useProductSummaryDispatch } from 'vtex.product-summary-context/ProductSummaryContext'
+import { useOrderItems } from 'vtex.order-items/OrderItems';
+
 
 const useProductExample = () => {
-    // const PST = ProductSummaryTypes
-    // const PSC = ProductSummaryContext
     const productSummary = useProductSummary()
-    // const dispatch = useProductDispatch()
     const product = productSummary
+    const dispatch = useProductSummaryDispatch()
     const productContext = useProduct()
-    // console.log("🚀 ~ file: useProductExample.tsx:8 ~ useProductExample ~ PST:", PST)
-    // console.log("🚀 ~ file: useProductExample.tsx:10 ~ useProductExample ~ PSC:", PSC)
-    // console.log("🚀 ~ file: useProductExample.tsx:26 ~ useProductExample ~ product?.product?.items[0]?.name:", product?.product?.items[0]?.name)
-    
+    const { addItems } = useOrderItems()
+
     console.log("useProdSummary:", product)
     console.log("productContext:", productContext)
 
-    // const changeProductBuyButton = () => {
-    //     return (
-    //         dispatch?.({
-    //             type: "SET_BUY_BUTTON_CLICKED",
-    //             args: { args: { clicked: true } }
-    //         })
-    //     )
-    // }
+    const changeProductHovering = () => {
+        return (
+            <p>{product?.product?.productName}</p>
+        )
+    }
+
+    const handleAddToCart = async () => {
+        const data: any = product?.product
+        addItems([{
+            id: data?.sku?.itemId,
+            quantity: product?.selectedQuantity,
+            seller: "1"
+        }]);
+    }
+
+    const handleBuyButton = (e: React.MouseEvent) => {
+        const newName = product.product.productName + " selecionado"
+        console.log(newName)
+        const newProduct = {
+            ...product.product,
+            productName: newName
+        }
+        dispatch?.({
+            type: "SET_PRODUCT",
+            args: { product: newProduct }
+        })
+
+        e.preventDefault()
+        e.stopPropagation()
+        handleAddToCart()
+    }
 
     return <>
-        {/* {!product? null : <p>{product?.product?.items[0]?.name}</p>} */}
-        {/* {product?.isHovering == true && productContext?.buyButton?.clicked == false && productContext?.buyButton?.clicked == undefined ? <p>{changeProductBuyButton()}</p> : null} */}
-        {/* {!productContext? null : <p>{productContext?.product?.productName}</p>} */}
+        {product?.isHovering == true ? changeProductHovering() : null}
+        <div>
+            <button onClick={handleBuyButton}>Adicionar ao carrinho</button>
+        </div>
     </>
 }
 

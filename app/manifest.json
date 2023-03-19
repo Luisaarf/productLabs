@@ -13,7 +13,8 @@
   "dependencies": {
     "vtex.styleguide": "9.x",
     "vtex.product-summary-context": "0.x",
-    "vtex.product-context": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.order-items": "0.x"
   },
   "billingOptions": {
     "type": "free",

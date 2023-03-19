@@ -2,14 +2,12 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      "product-summary-name",
+      "useProductExample",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button",
-      "useProductExample"
+      "product-installments#summary"
   ]
   },
   "flex-layout.col#productRating": {
